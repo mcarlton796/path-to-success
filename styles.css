@@ -1,0 +1,496 @@
+/* -------------------- CSS BY Mark Carlton -------------------------------------- */
+
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/*-------------------- CSS RESET --------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+:root{
+    font-family: "Kavoon", serif;
+    font-family: "Inter", "serif";
+    font-size: 1.25em;
+    --Teal: #4CA7C0;
+    --Purple: #484FB7;
+    --Lavender:#6B8FE7;
+    --Yellow:#E9BB57;
+    --Pink:#D9526F;
+    --Dark-Grey:#1E1E1E;
+    --White:#ffffff;
+}
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+html{
+    min-width: 450px;
+    background-color: var(--Purple);
+}
+
+h1, h2{
+    font-family: "Kavoon";
+}
+
+h1{
+    font-size: 3em;
+    color: var(--White);
+    text-align: center;
+    overflow: hidden;
+}
+
+nav h2{
+    font-size: 1.5em;
+}
+
+h2{
+    font-size: 2em;
+    color: var(--White);
+}
+
+h3{
+    font-size: 1.5em;
+    color: var(--Yellow);
+    font-weight: 600;
+}
+
+h4{
+    font-size: 1.15em;
+}
+
+.Path{
+    position: absolute;
+    height: 160px;
+    line-height: 210px;
+    width: 100%;
+    background-color: var(--Lavender);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    vertical-align: middle;
+}
+
+#unlock{
+    margin: auto;
+    font-style: italic;
+    width: 95%;
+    font-size: 1em;
+    text-align: center;
+    background-color: var(--Pink);
+    padding: 180px 0px 5px;
+    color: var(--White);
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.hidden{
+    display: none;
+}
+
+nav{
+    background-color: var(--Yellow);
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-align: center;
+    line-height: 30px;
+    padding: 15px 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family: "Inter";
+}
+
+nav h2{
+    font-family: "Inter";
+    font-style: italic;
+    color: var(--Dark-Grey);
+    font-weight: 700;
+}
+
+nav ul{
+    display: none;
+}
+
+header{
+    margin-bottom: 50px;
+}
+
+section{
+    margin: 0px 17px;
+}
+
+article{
+    background-color: var(--White);
+    margin: 15px 10px;
+    padding: 30px;
+    line-height: 28px;
+    border-radius: 20px;
+    color: var(--Dark-Grey);
+}
+
+article img{
+    padding: 10px;
+}
+
+article h4{
+    color: var(--Purple);
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+#WhyChooseUs{
+    background-color: var(--Pink);
+    margin: 0;
+    padding: 15px;
+}
+
+#WhyChooseUs h2{
+    margin-bottom: 10px;
+}
+
+#WhyChooseUs div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#WhyChooseUs div p{
+    padding: 40px 10px;
+    text-align: center;
+    color: var(--Dark-Grey);
+    font-weight: 800;
+    border-radius: 20px;
+}
+
+#choose1{
+    background-color: var(--Teal);
+}
+
+#choose2{
+    background-color: var(--Lavender);
+}
+
+#choose3{
+    background-color: var(--Yellow);
+}
+
+#choose4{
+    background-color: var(--White);
+}
+
+#Pricing{
+    margin-top: 15px;
+}
+
+#Pricing h3{
+    font-weight: 700;
+}
+
+table{
+    width: 280px;
+    margin: 10px auto;
+    background-color: var(--Yellow);
+    text-align: center;
+    color: var(--Dark-Grey);
+}
+
+td{
+    padding: 18px 0px;
+}
+
+.service{
+    font-weight: 700;
+}
+
+.entry{
+    background-color: var(--White);
+    border: 2px var(--Yellow) solid;
+}
+
+#FirstStep{
+    background-color: var(--Pink);
+    margin: 0;
+    padding: 17px;
+    color: var(--White);
+    line-height: 27px;
+}
+
+#FirstStep h2{
+    margin: 8px 0 17px;
+    line-height: 40px;
+}
+
+.Schedule{
+    background-color: var(--White);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 25px;
+    width: 350px;
+    margin: 10px auto auto auto;
+    border-radius: 17px;
+    box-shadow: 5px 5px 5px var(--Dark-Grey);
+}
+
+.Schedule a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--Dark-Grey);
+}
+
+footer{
+    padding: 60px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--Lavender);
+    margin-bottom: 10px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+footer p{
+    color: var(--White);
+    font-size: 0.8em;
+}
+
+footer a{
+    color: white;
+}
+
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media screen and (min-width: 620px){
+    .hidden{
+        display: contents;
+    }
+
+    .griddy div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .griddy div article:nth-of-type(3){
+        grid-column: span 2;
+    }
+
+    .three article{
+        grid-column: span 2;
+    }
+
+    #WhyChooseUs div{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .pricetables{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        height: 600px;
+        margin: 0px;
+        gap: 1%;
+    }
+
+    .pricetables h3{
+        font-size: 1.25em; /*I had to make a shrink the size of the heading, any larger and it broke the entire page*/
+    }
+
+    .pricetables div{
+        margin: 15px 0px;
+        width: 100%;
+    }
+
+    table{
+        max-width: 40%;
+        position: absolute;
+        margin: 40px auto auto 20px;
+    }
+    
+    .odds{
+        width: 280px;
+        height: auto;
+    }
+
+    .evens{
+        width: 230px;
+    }
+
+    .bottom-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Schedule a{
+        position: relative;
+    }
+
+    footer{
+        margin-bottom: 50px;
+    }
+}
+
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media screen and (min-width: 950px){
+    .Path{
+        max-width: 1100px;
+    }
+
+    html{
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    nav h2{
+        display: none;
+    }
+
+    nav ul{
+        display: contents;
+        display: flex;
+        
+    }
+
+    nav li{
+        margin: auto 20px;
+        
+    }
+
+    nav a{
+        text-decoration: none;
+        color: var(--Dark-Grey);
+        font-weight: 700;
+    }
+
+    .griddy{
+        display: grid;
+        grid-auto-flow: row dense;
+    }
+
+    .griddy div{
+        display: block;
+    }
+
+    .griddy > h3:nth-child(1){
+        grid-column: 1 / 1;
+        font-size: 1.25em;
+        text-align: center;
+    }
+
+    .griddy > h3:nth-child(3){
+        grid-column: 2 / 2;
+        font-size: 1.25em;
+        text-align: center;
+    }
+
+    .griddy > h3:nth-child(5){
+        grid-column: 3 / 3;
+        font-size: 1.25em;
+        text-align: center;
+    }
+
+    .griddy > h3:nth-child(7){
+        grid-column: 4 / 4;
+        font-size: 1.25em;
+        text-align: center;
+    }
+
+    .griddy div:nth-child(2){
+        grid-template-columns: 1fr;
+        grid-column: 1 / 1;
+    }
+
+    .griddy div article:nth-of-type(3){
+        grid-column: span 1;
+    }
+
+    .griddy div:nth-child(4){
+        grid-template-columns: 1fr;
+        grid-column: 2 / 2;
+    } 
+
+    .griddy div:nth-child(6){
+        grid-template-columns: 1fr;
+        grid-column: 3 / 3;
+    } 
+
+    .griddy div:nth-child(8){
+        grid-template-columns: 1fr;
+        grid-column: 4 / 4;
+    } 
+
+    .pricetables{
+        grid-template-columns: repeat(4, 1fr);
+        height: 300px;
+    }
+
+    .pricetables h3{
+        font-size: 0.9em;
+        font-weight: 800;
+        width: auto;
+    }
+
+    .pricetables div{
+        width: auto;
+    }
+
+    table{
+        margin-top: 10px;
+        width: 20%;
+        max-width: 250px;
+        font-size: 83%;
+    }
+}
+
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media screen and (min-width: 1280px){
+    html{
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .Path{
+        max-width: 1100px;
+        margin: auto;
+    }
+}
